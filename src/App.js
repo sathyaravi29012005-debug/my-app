@@ -42,6 +42,7 @@ function App() {
 
 
         {/* <Route path= "/products"element={<Dashboard/>}>
+
         <Route path='productlist' element={<Productlist/>}/>
         <Route path='productreview' element={<Productreview/>}/>
 
@@ -73,6 +74,17 @@ function App() {
 // }
 
 export default App;
+
+
+const[productlist, setProductList] = useStates([]),
+
+
+// Could be GET or POST/PUT/PATCH/DELETE
+fetch('https://dummyjson.com/test')
+.then(res => res.json())
+.then(console.log);
+
+/* { status: 'ok', method: 'GET' } */
 
   
 
